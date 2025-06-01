@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user-poral
+  datasource:
+    url: jdbc:h2:mem:userdb
+    driver-class-name: org.h2.Driver
+    username: admin
+    password:
+    h2:
+      console:
+        enabled: true
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      show-sql: true
