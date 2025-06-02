@@ -10,11 +10,11 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 
 @Service
-public class DatabaseUserDetailsService implements UserDetailsService {
+public class AppUserDetailsService implements UserDetailsService {
 
     private final UserRepository userRepository;
 
-    public DatabaseUserDetailsService(UserRepository userRepository) {
+    public AppUserDetailsService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
